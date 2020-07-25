@@ -38,9 +38,10 @@ if __name__=="__main__":
              time.sleep(1./20)
              print (f"\r\033[1;97m[\033[1;96m!\033[1;97m]Loading{load}\033[1;92m{x}\033[1;97m%", end='', flush=True)
          while True:
+              print ("\r\n")
               call()
               countdownTimer(1, 00)
-              print ("\n\r")
+              print ("\r")
      except requests.exceptions.ConnectionError:
                sys.exit("\033[1;97m[\033[1;91m×\033[1;97m\033[1;91mKoneksi Error!!")
      except KeyError:
